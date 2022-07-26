@@ -1,5 +1,5 @@
 # AllJson
-This package brings together [gJSON](https://github.com/tidwall/gjson) and [sGSON](https://github.com/tidwall/sjson) in 1 library allow you
+This package brings together [gJSON](https://github.com/tidwall/gjson) and [sJSON](https://github.com/tidwall/sjson) in 1 library allow you
 to read and set json values quickly and effectively.
 
 # Usage
