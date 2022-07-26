@@ -1,4 +1,4 @@
-package alljson
+package ajson
 
 func (t *Result) Set(key string, value interface{}) {
 	raw := t.Raw

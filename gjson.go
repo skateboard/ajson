@@ -1,4 +1,4 @@
-package alljson
+package ajson
 
 import (
 	"strconv"

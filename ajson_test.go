@@ -1,4 +1,4 @@
-package alljson
+package ajson
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 const json = `{"name":{"first":"Janet","last":"Prichard"},"age":47}`
 
-func TestCustom(t *testing.T) {
+func TestAJSON(t *testing.T) {
 	r := Parse(json)
 	r.Set("name.first", "Jospeh")
 
