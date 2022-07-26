@@ -1,4 +1,4 @@
-module github.com/skateboard/alljson
+module github.com/skateboard/ajson
 
 go 1.18
 
