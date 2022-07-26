@@ -67,6 +67,13 @@ type Result struct {
 	Indexes []int
 }
 
+func NewResult() Result {
+	return Result{
+		Type: JSON,
+		Raw:  "{}",
+	}
+}
+
 // String returns a string representation of the value.
 func (t Result) String() string {
 	switch t.Type {

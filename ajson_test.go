@@ -9,7 +9,8 @@ const json = `{"name":{"first":"Janet","last":"Prichard"},"age":47}`
 
 func TestAJSON(t *testing.T) {
 	r := Parse(json)
-	r.Set("name.first", "Jospeh")
+	r.Create("dob", "4/12/1984")
 
-	fmt.Println(r.Raw)
+	v := r.Get("dob")
+	fmt.Println(v.String())
 }

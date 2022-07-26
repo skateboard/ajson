@@ -10,3 +10,14 @@ func (t *Result) Set(key string, value interface{}) {
 
 	t.Raw = s
 }
+
+func (t *Result) Create(key string, value interface{}) {
+	raw := t.Raw
+
+	s, err := SetBytes([]byte(raw), key, value)
+	if err != nil {
+		return
+	}
+
+	t.Raw = string(s)
+}
