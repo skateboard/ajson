@@ -20,5 +20,10 @@ func main() {
 
 	afterValue := r.Get("name.last")
 	println(afterValue.String())
+	
+	r.Create("dob", "4/12/1984")
+
+	bobV := r.Get("dob")
+	fmt.Println(bobV.String())
 }
 ```
