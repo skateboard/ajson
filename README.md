@@ -24,6 +24,6 @@ func main() {
 	r.Create("dob", "4/12/1984")
 
 	bobV := r.Get("dob")
-	fmt.Println(bobV.String())
+	println(bobV.String())
 }
 ```
