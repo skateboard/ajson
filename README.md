@@ -6,7 +6,7 @@ to read and set json values quickly and effectively.
 ```go
 package main
 
-import "github.com/skateboard/alljson"
+import "github.com/skateboard/ajson"
 
 const json = `{"name":{"first":"Janet","last":"Prichard"},"age":47}`
 
