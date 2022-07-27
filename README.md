@@ -11,7 +11,7 @@ import "github.com/skateboard/ajson"
 const json = `{"name":{"first":"Janet","last":"Prichard"},"age":47}`
 
 func main() {
-	r := alljson.Parse(json)
+	r := ajson.Parse(json)
 	
 	beforeValue := r.Get("name.last")
 	println(beforeValue.String())
