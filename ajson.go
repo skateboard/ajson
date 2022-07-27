@@ -21,3 +21,14 @@ func (t *Result) Create(key string, value interface{}) {
 
 	t.Raw = string(s)
 }
+
+func (t *Result) Delete(key string) {
+	raw := t.Raw
+
+	s, err := Delete(raw, key)
+	if err != nil {
+		return
+	}
+
+	t.Raw = s
+}
